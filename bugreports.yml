@@ -202,3 +202,20 @@
     Открылся каталог товара с выбранной соответствующей категорией (если хэштег был #beauty, то в каталоге должна быть категория beuaty соответственно)
   actual-result: |
     К url адресу добавился хэш тег "https://hexlet-products-store.vercel.app/products/2#", но ничего не произошло
+
+- summary: |
+    Некорректные запросы в DevTools
+  environment: |
+    Google Chrome    137.0.7151.104 (Официальная сборка) (64 бит)
+    ОС Windows 22H2
+  steps-to-reproduce: |
+    1. Открываем DevTools
+    2. Перезагружаем страницу
+    3. Открываем вкладку "Console"
+  expected-result: |
+    Все запросы уходят и приходят без ошибок
+  actual-result: |
+    В консоли два ошибочных GET запроса: 
+    1) GET https://site/static/css/random.css net::ERR_NAME_NOT_RESOLVED
+    2) GET https://site/static/js/author.js net::ERR_NAME_NOT_RESOLVED 
+    Ресурсы недоступны
