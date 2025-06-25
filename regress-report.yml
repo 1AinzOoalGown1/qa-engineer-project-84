@@ -171,6 +171,10 @@ test-cases:
 - summary: |
     Проверяем GET и POST запросы в DevTools
   status: pass
+
+- summary: |
+    Переход на страницу оплаты
+  status: fail
 bugreports:
 - summary: |
     Нет изобрежаний флагов в смене языка
