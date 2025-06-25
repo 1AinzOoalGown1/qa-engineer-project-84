@@ -175,6 +175,10 @@ test-cases:
 - summary: |
     Переход на страницу оплаты
   status: fail
+
+- summary: |
+    Проверка на кликабельность там где она быть не должна
+  status: pass
 bugreports:
 - summary: |
     Нет изобрежаний флагов в смене языка
