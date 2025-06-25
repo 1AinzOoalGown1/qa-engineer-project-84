@@ -174,3 +174,7 @@
 - summary: |
     Проверяем GET и POST запросы в DevTools
   status: fail
+
+- summary: |
+    Переход на страницу оплаты
+  status: fail
