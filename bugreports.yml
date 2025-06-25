@@ -219,3 +219,17 @@
     1) GET https://site/static/css/random.css net::ERR_NAME_NOT_RESOLVED
     2) GET https://site/static/js/author.js net::ERR_NAME_NOT_RESOLVED 
     Ресурсы недоступны
+
+- summary: |
+    Не выполнено тз, страницы оплаты не существует
+  environment: |
+    Google Chrome    137.0.7151.104 (Официальная сборка) (64 бит)
+    ОС Windows 22H2
+  steps-to-reproduce: |
+    1. Добавить случайный товар в корзину
+    2. Перейти в корзину
+    3. Нажать кнопку "Оформить заказ"
+  expected-result: |
+    Открылась страница оплаты
+  actual-result: |
+    Открылось окно "Заказ успешно формлен", которое должно появляться только после оплаты на странице оплаты, которой нет
