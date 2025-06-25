@@ -167,7 +167,10 @@ test-cases:
 - summary: |
     Некорректный поиск товара
   status: fail
-  
+
+- summary: |
+    Проверяем GET и POST запросы в DevTools
+  status: pass
 bugreports:
 - summary: |
     Нет изобрежаний флагов в смене языка
