@@ -170,3 +170,7 @@
 - summary: |
     Некорректный поиск товара
   status: pass
+
+- summary: |
+    Проверяем GET и POST запросы в DevTools
+  status: fail
